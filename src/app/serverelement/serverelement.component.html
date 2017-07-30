@@ -2,9 +2,10 @@
   class="panel panel-default">
   <div class="panel-heading">{{ item.name }}</div>
   <div class="panel-body">
-    <p>
-    <li *ngIf="item.type === 'server'" style="color: red">{{ item.content }}</li>
-    <em *ngIf="item.type === 'blueprint'" >{{ item.content }}</em>
-    </p>
+    <!--<p>-->
+    <!--<li *ngIf="item.type === 'server'" style="color: red">{{ item.content }}</li>-->
+    <!--<em *ngIf="item.type === 'blueprint'" >{{ item.content }}</em>-->
+    <!--</p>-->
+    <ng-content></ng-content>
   </div>
 </div>
