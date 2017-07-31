@@ -1,4 +1,10 @@
-import { Component, OnInit, Input } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input,
+  OnChanges,
+  SimpleChange
+} from '@angular/core';
 
 
 @Component({
@@ -6,9 +12,13 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './serverelement.component.html',
   styleUrls: ['./serverelement.component.css']
 })
-export class ServerelementComponent implements OnInit {
+export class ServerelementComponent implements OnInit, OnChanges {
 @Input() item:[{type:string , name:string , content:string}];
 constructor() { }
+
+  ngOnChanges(changes: SimpleChange){
+
+  }
 
   ngOnInit() {
   }
